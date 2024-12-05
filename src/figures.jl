@@ -1,3 +1,6 @@
+"""
+    Dict containing the colors for each parameter.
+"""
 param_color = Dict(
     "BPD"    => "#F32EA1",
     "AC"     => "#0BD976",
@@ -5,6 +8,9 @@ param_color = Dict(
     "HC"     => "#8630BF",
 )
 
+"""
+    Dict containing the markers for each parameter.
+"""
 param_marker = Dict(
     "BPD"    => :star5,
     "AC"     => :circle,

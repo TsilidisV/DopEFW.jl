@@ -1,3 +1,18 @@
+"""
+    struct Formula
+
+A structure to represent a mathematical formula or function along with its parameters and associated paper.
+
+# Fields
+- `func::Function`: A function that defines the mathematical operation or formula.
+- `parameters::Vector{String}`: A vector of strings representing the names of the parameters used in the formula.
+- `paper::String`: A string indicating the source or reference (e.g., paper title) associated with the formula.
+
+# Example
+```julia
+formula_instance = Formula(my_func, ["x", "y"], "Title of the Paper")
+```
+"""
 struct Formula
     func::Function
     parameters::Vector{String}

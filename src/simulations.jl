@@ -2,6 +2,31 @@ using DataFramesMeta, CSV
 using GlobalSensitivity, QuasiMonteCarlo
 using LinearAlgebra
 
+"""
+    simulation(formula::Formula, dataset::String; ci::Int = 10, path::String = "DopEFW\\data\\pro\\data.csv", samples::Int = 10^6) -> DataFrame
+
+Performs a sensitivity analysis simulation using the specified formula and dataset, generating Sobol sensitivity indices.
+
+# Arguments
+- `formula::Formula`: An instance of the `Formula` struct that contains the function to evaluate and its parameters.
+- `dataset::String`: The name of the dataset (paper) to filter the data for the simulation.
+- `ci::Int`: The confidence interval percentile to use (default is 10).
+- `path::String`: The file path to the CSV file containing the datasets (default is "DopEFW\\data\\pro\\data.csv").
+- `samples::Int`: The number of samples to use for the Quasi-Monte Carlo simulation (default is 1,000,000).
+
+# Returns
+A `DataFrame` containing the results of the sensitivity analysis simulation, for each week of the dataset.
+
+# Example
+```julia
+# Define a simple function and create a Formula instance
+
+formula_instance = Formula(x -> x[1] + x[2], ["x1", "x2"], "Title of the Paper")
+
+results = simulation(formula_instance, "DatasetName")
+println(results)
+```
+"""
 function simulation(formula::Formula, dataset::String; ci = 10, path = "DopEFW\\data\\pro\\data.csv", samples = 10^6)
     
     df = DataFrame(CSV.File(path))

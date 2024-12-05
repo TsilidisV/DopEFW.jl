@@ -28,4 +28,3 @@ for dict in dicts
         filename = savename(dict, allowedtypes = (Vector,Real,Function, String, Formula))
     )
 end
-
