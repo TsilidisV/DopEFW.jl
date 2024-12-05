@@ -70,6 +70,5 @@ jobs:
           using DopEFW
           DocMeta.setdocmeta!(DopEFW, :DocTestSetup, :(using DopEFW); recursive=true)
           doctest(DopEFW)
-          
-- name: Build and deploy
-run: julia --project=docs docs/make.jl
+      - name: Build and deploy
+        run: julia --project=docs docs/make.jl
