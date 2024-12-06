@@ -38,13 +38,13 @@ hadlockIV = Formula(
 
 one can define the formula $10^{1.3596+0.00061\left(\text{BPD}\right)\left(\text{AC}\right)+0.424\left(\text{AC}\right)+0.174\left(\text{FL}\right)+0.0064\left(\text{HC}\right)-0.00386\left(\text{AC}\right)\left(\text{FL}\right)}$ from [[2]](#2).
 
-Then, for computing the Sobol' indices of ```hadlockIV``` for some datasets, for instance the dataset from [[3]](#3), which is included in [data.xlsx](DopEFW\data\raw\data.xlsx) in the sheet called ```"papageorghiou2014"```, you can use the function:
+Then, for computing the Sobol' indices of ```hadlockIV``` for some datasets, for instance the dataset from [[3]](#3), which is included in [data.xlsx](DopEFW/data/raw/data.xlsx) in the sheet called ```"papageorghiou2014"```, you can use the function:
 ```julia
 simulation(hadlockIV, "papageorghiou2014") 
 ```
 which will return a DataFrame with the indices.
 
-If you want to add a new dataset to the list, you'll have to add it as a newsheet in [data](DopEFW\data\raw\data.xlsx), and then running the function
+If you want to add a new dataset to the list, you'll have to add it as a newsheet in [data](DopEFW/data/raw/data.xlsx), and then running the function
 ```julia
 using DrWatson
 using DopEFW
