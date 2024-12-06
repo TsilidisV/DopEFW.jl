@@ -17,6 +17,7 @@ A tuple containing two strings:
 ```julia
 result = split_string("Hello123World")
 println(result)  # Output: ("Hello", "123World")
+```
 """
 function split_string(s::String)
     idx = findfirst(isdigit, s)  # Find the first occurrence of a digit
@@ -79,6 +80,7 @@ A vector of strings containing the names of the sheets in the specified Excel fi
 ```julia
 sheet_names = get_sheet_names("example.xlsx")
 println(sheet_names)  # Output: ["Sheet1", "Sheet2", "Data", ...]
+```
 """
 function get_sheet_names(file_path::String)
     xf = XLSX.readxlsx(file_path)
