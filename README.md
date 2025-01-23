@@ -44,9 +44,10 @@ simulation(hadlockIV, "papageorghiou2014")
 ```
 which will return a DataFrame with the indices.
 
-If you want to add a new dataset to the list, you'll have to add it as a newsheet in [data](DopEFW/data/raw/data.xlsx), and then running the function
+If you want to add a new dataset to the list, you'll have to add it as a newsheet in [data.xlsx](data/raw/data.xlsx), and then running the function
 ```julia
 using DrWatson
+quickactivate("DopEFW")
 using DopEFW
 using DataFrames, CSV
 

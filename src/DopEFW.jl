@@ -20,4 +20,6 @@ include("figures.jl")
 export bootstrap, df_bootstrap
 include("bootstrapping.jl")
 
+export fiftyvsninty
+include("percentchange.jl")
 end
