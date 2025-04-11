@@ -2,10 +2,11 @@
 # The script saves the median of the estimation along with a 95% CI
 
 using DrWatson, Revise
-quickactivate("F:\\Users\\Billy\\Documents\\Math\\Research\\2025_Sonographer\\DopEFW", "DopEFW")
-using DopEFW
 using DataFramesMeta, CSV
 using Statistics
+quickactivate("DopEFW")
+using DopEFW
+
 
 df = collect_results(datadir("simulations"))
 

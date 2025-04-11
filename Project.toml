@@ -13,6 +13,7 @@ LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
 QuasiMonteCarlo = "8a4e6c94-4038-4cdc-81c3-7e6ffdb2a71b"
 Random = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
 Statistics = "10745b16-79ce-11e8-11f9-7d13ad32a3b2"
+Unitful = "1986cc42-f94f-5a68-af5c-568840ba703d"
 XLSX = "fdbf4ff8-1666-58a4-91e7-1b58723a45e0"
 
 [compat]
@@ -25,6 +26,7 @@ LinearAlgebra = "1.11.0"
 QuasiMonteCarlo = "0.3.3"
 Random = "1.11.0"
 Statistics = "1.11.1"
+Unitful = "1.22.0"
 XLSX = "0.10.4"
 julia = "1.6.7"
 

@@ -1,7 +1,9 @@
+# Script for calculating the experiments of Section 4.2 titled "Interpretations of result"
+
 using DrWatson, Revise
-quickactivate("F:\\Users\\Billy\\Documents\\Math\\Research\\2025_Sonographer\\DopEFW", "DopEFW")
-using DopEFW
 using DataFramesMeta, CSV
+quickactivate("DopEFW")
+using DopEFW
 
 df_pro = DataFrame(CSV.File(datadir("pro", "data.csv")))
 dfs = collect_results(datadir("simulations"))

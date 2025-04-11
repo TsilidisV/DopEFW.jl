@@ -14,7 +14,7 @@ include("FormulasUtilis.jl")
 export simulation
 include("simulations.jl")
 
-export param_color, param_marker
+export param_color, param_marker, figdir, numtogrid, metadata_getter
 include("figures.jl")
 
 export bootstrap, df_bootstrap

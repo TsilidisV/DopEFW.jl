@@ -1,3 +1,5 @@
+# Script for reading the excel file of the raw data and tranforming it into a nice to work with form
+
 using DrWatson, Revise
 quickactivate("F:\\Users\\Billy\\Documents\\Math\\Research\\2025_Sonographer\\DopEFW", "DopEFW")
 using DopEFW

@@ -1,5 +1,7 @@
+# Script for running and saving of the simulations
+
 using DrWatson, Revise
-quickactivate("F:\\Users\\Billy\\Documents\\Math\\Research\\2025_Sonographer\\DopEFW", "DopEFW")
+quickactivate("DopEFW")
 using DopEFW
 
 dataset_names = get_sheet_names(datadir("raw", "data.xlsx"))
