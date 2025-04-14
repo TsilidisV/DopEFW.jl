@@ -1,9 +1,9 @@
 # **D**ependence **o**f ultrasonical **p**arametrs on **E**stimated **F**etal **W**eight (DopEFW)
 
-[![Stable](https://img.shields.io/badge/docs-stable-blue.svg)](https://TsilidisV.github.io/DopEFW.jl/stable/)
 [![Dev](https://img.shields.io/badge/docs-dev-blue.svg)](https://TsilidisV.github.io/DopEFW.jl/dev/)
 [![Build Status](https://github.com/TsilidisV/DopEFW.jl/actions/workflows/CI.yml/badge.svg?branch=master)](https://github.com/TsilidisV/DopEFW.jl/actions/workflows/CI.yml?query=branch%3Amaster)
 [![Code Style: Blue](https://img.shields.io/badge/code%20style-blue-4495d1.svg)](https://github.com/invenia/BlueStyle)
+[![DOI](https://zenodo.org/badge/898981041.svg)](https://doi.org/10.5281/zenodo.15210717)
 
 A julia package for investigating the significance of the ultrasonically measured biometric parameters:
 - _biparietal diameter_ (BPD),

@@ -24,7 +24,9 @@ week_ticks = unique(df.week)
 inch = 96
 pt = 4/3
 cm = inch / 2.54
-fontsize = 10pt
+fontsize = 8pt
+
+figdir(args...) = projectdir("figures", args...)
 
 param_fig = with_theme() do 
         fig = Figure(;
@@ -38,8 +40,11 @@ param_fig = with_theme() do
         idx = numtogrid(i, 2)
         ax[i] = Axis(fig[idx[:row], idx[:col]];
                 title = param,
+                titlesize = 10pt,
                 xlabel = "Week",
-                ylabel = "Measurement (cm)",   
+                ylabel = "Measurement (cm)",
+                xlabelsize = 9pt,
+                ylabelsize = 9pt   
         )
 
         data = Vector{Vector{Float64}}(undef, 3)
